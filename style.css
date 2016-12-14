@@ -1,0 +1,37 @@
+/* general style */
+body {
+	background-color: lightgray;
+	padding: 10px;
+	hyphens: auto;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex > * {
+	margin: 0 10px 10px 0;
+}
+
+/* books.html */
+.book {
+	width: 210px;
+	background-color: grey;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.book, .book:link, .book:hover, .book:visited {
+	text-decoration: none;
+	color: black;
+}
+
+.book .title {
+	margin: 4px 0;
+}
+
+.book img.cover {
+	max-width: 96%;
+	margin-left: 2%;
+}
