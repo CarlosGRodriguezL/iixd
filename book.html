@@ -1,0 +1,69 @@
+<html lang="de">
+<head>
+	<meta charset="utf-8" />
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h2>Programmkonstruktionen</h2>
+<div class="flex">
+	<div>
+		<img class="cover" src="img/cover/scriptProgrammkonstruktionen.svg">
+	</div>
+
+	<div>
+		<table class="border">
+			<tbody class="column1Right column1Top column1Bold">
+			<tr>
+				<td>Autor</td>
+				<td>Puntigam, Reiter</td>
+			</tr>
+			<tr>
+				<td>Studienrichtung</td>
+				<td>Informatik</td>
+			</tr>
+			<tr>
+				<td>Fächer</td>
+				<td>Grundlagen der Programmkonstruktionen<br />Programmierpraxis</td>
+			</tr>
+			</tbody>
+		</table>
+
+		<div style="margin-top: 40px" class="alert alert-success" role="alert">
+			<strong>Es wurde eine Anfrage versendet.</strong>
+		</div>
+	</div>
+
+	<div>
+		<table id="available" class="border">
+			<thead>
+			<tr>
+				<th>abzuholen</th>
+				<th>Zustand</th>
+				<th></th>
+			</tr>
+			</thead>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	// just generating data
+	conditions = ['neuwertig', 'gebraucht'];
+	availableTbody = document.getElementById('available').getElementsByTagName('tbody')[0];
+	for (var i = 0; i < 15; ++i) {
+		var row = availableTbody.insertRow();
+		row.insertCell().innerText = '' + (1000 + Math.round(Math.random() * (9999 - 1000)));
+		row.insertCell().innerText = conditions[Math.round(Math.random() * (conditions.length - 1))];
+		row.insertCell().innerHTML = '<h4><span class="label label-info">ausborgen</span></h4>'
+	}
+</script>
+</body>
+</html>

@@ -14,6 +14,31 @@ body {
 	margin: 0 10px 10px 0;
 }
 
+/* general table */
+table.border th, table.border td {
+	border: solid 1px;
+}
+
+table thead, table tfoot {
+	font-weight: bold;
+}
+
+table th, table td {
+	padding: 2px 5px;
+}
+
+.column1Right tr td:first-child {
+	text-align: right;
+}
+
+.column1Top tr td:first-child {
+	vertical-align: top;
+}
+
+.column1Bold tr td:first-child {
+	font-weight: bold;
+}
+
 /* books.html */
 .book {
 	width: 210px;
