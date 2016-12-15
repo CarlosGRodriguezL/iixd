@@ -1,6 +1,10 @@
 <html>
 	<head>
+		<link rel="stylesheet" href="sellformstyle.css" />
 		<link rel="stylesheet" href="bootstrap.css" />
+		<link rel="stylesheet" href="bootstrap.css" />
+		<script type="text/javascript" src="jqueryv3.1.js" ></script>
+		<script type="text/javascript" src="script.js" ></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
@@ -14,6 +18,10 @@
 							<input type="email" class="form-control" id="ISBN">
 						</div>
 						<div class="form-group">
+							<label for="titel">Titel</label>
+							<input type="email" class="form-control" id="titel">
+						</div>
+						<div class="form-group">
 							<label for="Author">Author</label>
 							<input type="email" class="form-control" id="Author">
 						</div>
@@ -25,39 +33,47 @@
 							<label for="Fächer">Fächer</label>
 							<input type="email" class="form-control" id="Fächer">
 						</div>
-						<button type="submit" class="btn btn-default">Anbieten</button>
+						<button type="submit" id="submit" class="btn btn-default">Anbieten</button>
 					</form>					
-					<div class="alert alert-success">
+					<div class="alert alert-success hide" id="success">
 						Objekt wurde erfolgreich hinzugefügt.
 					</div>
 				</div>
 				<div class="col-md-4">
-					<h3>Empfehlungen:</h3>
-					<div class="list-group">
-						<a href="#" class="list-group-item active books">
-							<h4 class="list-group-item-heading">Informatik Grundlagen</h4>
-							<p class="list-group-item-text">ISBN: 108034...</p>
-						</a>
-						<a href="#" class="list-group-item books">
-							<h4 class="list-group-item-heading">Informatik Grundlagen 2</h4>
-							<p class="list-group-item-text">ISBN: 108035...</p>
-						</a>
-						<a href="#" class="list-group-item books">
-							<h4 class="list-group-item-heading">Informatik Grundlagen 3</h4>
-							<p class="list-group-item-text">ISBN: 108036</p>
-						</a>
-						<a href="#" class="list-group-item active scripts">
-							<h4 class="list-group-item-heading">Informatik Basics Script 1</h4>
-							<p class="list-group-item-text">ISBN: 108034...</p>
-						</a>
-						<a href="#" class="list-group-item scripts">
-							<h4 class="list-group-item-heading">Informatik Basics Script 2</h4>
-							<p class="list-group-item-text">ISBN: 108035...</p>
-						</a>
-						<a href="#" class="list-group-item scripts">
-							<h4 class="list-group-item-heading">Informatik Basics Script 3</h4>
-							<p class="list-group-item-text">ISBN: 108036</p>
-						</a>
+					<div class="books hide">
+						<h3>Empfehlungen:</h3>
+						<div class="list-group">
+							<a href="#" class="list-group-item ">
+								<h4 class="list-group-item-heading">Informatik Grundlagen</h4>
+								<p class="list-group-item-text">ISBN: 108034...</p>
+							</a>
+							<a href="#" class="list-group-item ">
+								<h4 class="list-group-item-heading">Informatik Grundlagen 2</h4>
+								<p class="list-group-item-text">ISBN: 108035...</p>
+							</a>
+							<a href="#" class="list-group-item ">
+								<h4 class="list-group-item-heading">Informatik Grundlagen 3</h4>
+								<p class="list-group-item-text">ISBN: 108036</p>
+							</a>
+							
+						</div>
+					</div>
+					<div class="scripts hide">
+						<h3>Empfehlungen:</h3>
+						<div class="list-group">
+							<a href="#" class="list-group-item ">
+								<h4 class="list-group-item-heading">Informatik Basics Script 1</h4>
+								<p class="list-group-item-text">ISBN: 108034...</p>
+							</a>
+							<a href="#" class="list-group-item ">
+								<h4 class="list-group-item-heading">Informatik Basics Script 2</h4>
+								<p class="list-group-item-text">ISBN: 108035...</p>
+							</a>
+							<a href="#" class="list-group-item ">
+								<h4 class="list-group-item-heading">Informatik Basics Script 3</h4>
+								<p class="list-group-item-text">ISBN: 108036</p>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
