@@ -1,17 +1,45 @@
-<html>
+<html lang="de">
 	<head>
 		<link rel="stylesheet" href="sellformstyle.css" />
 		<link rel="stylesheet" href="bootstrap.css" />
-		<link rel="stylesheet" href="bootstrap.css" />
+		<link rel="stylesheet" href="style.css" />
 		<script type="text/javascript" src="jqueryv3.1.js" ></script>
 		<script type="text/javascript" src="script.js" ></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8" />
 	</head>
 	<body>
-		<div class="container">
+	<div class="container-fluid">
+	<div id="banner">
+		<div id="logo"><img src="img/logo.jpg" /></div>
+		<div id="login">
+			E-Mail: <input type="text" size="19" name="bn" placeholder="E-Mail" title="E-Mail"/> &nbsp; Passwort: <input type="password" size="19" name="pw" placeholder="Passwort" title="Passwort" /> &nbsp;<button type="button" style="width:70px;">Login</button><p style="font-size:14px;">Noch nicht registiriert? <a href="registration.html">Hier Registrieren</a></p>
+		</div>
+		<div id="search">Suchen: <input type="text" size="20" name="bn" placeholder="Suchen ... " title="Suchen ..." /> <button type="button" style="background-color:#000A3A; border: none;"><img style="height:20px; width: 20px; padding-top:100px;" src="img/search.ico" /></button></div>
+	</div>
+
+	<div id="control">
+		<ul>
+			<li><a href="anmelden.html">Home</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Studien</a>
+				<div class="dropdown-content">
+					<a href="#">Architektur</a>
+					<a href="#">Elektrotechnik</a>
+					<a href="registration.html">Informatik</a>
+					<a href="#">Maschinenbau</a>
+				</div>
+			</li>
+			<li><a href="#">Inserieren</a></li>
+		</ul>
+	</div>
+
+
+
+	<div id="content">
 			<div class="row">
 				<div class="col-md-8">
-					<h1>Objekt hinzufügen</h1>
+					<h1>Objekt hinzufÃ¼gen</h1>
 					<form>
 						<div class="form-group">
 							<label for="ISBN">ISBN</label>
@@ -30,13 +58,13 @@
 							<input type="text" class="form-control" id="Studienrichtung">
 						</div>
 						<div class="form-group">
-							<label for="Fächer">Fächer</label>
-							<input type="text" class="form-control" id="Fächer">
+							<label for="FÃ¤cher">FÃ¤cher</label>
+							<input type="text" class="form-control" id="FÃ¤cher">
 						</div>
 						<button type="submit" id="submit" class="btn btn-default">Anbieten</button>
 					</form>					
 					<div class="alert alert-success hide" id="success">
-						Objekt wurde erfolgreich hinzugefügt.
+						Objekt wurde erfolgreich hinzugefÃ¼gt.
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -78,5 +106,6 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</body>
 </html>
