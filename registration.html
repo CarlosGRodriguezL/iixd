@@ -8,9 +8,9 @@
 <div id="banner">
 	<div id="logo"><img src="img/logo.jpg" /></div>
 	<div id="login">
-		E-Mail: <input type="text" size="19" name="bn"/> &nbsp; Passwort: <input type="text" size="19" name="pw" /> &nbsp;<button type="button" style="width:70px;">Login</button><p style="font-size:14px;">Noch nicht registiriert? <a href="registration.html">Hier Registrieren</a></p>
+		E-Mail: <input type="text" size="19" name="bn" placeholder="E-Mail" title="E-Mail"/> &nbsp; Passwort: <input type="password" size="19" name="pw" placeholder="Passwort" title="Passwort" /> &nbsp;<button type="button" style="width:70px;">Login</button><p style="font-size:14px;">Noch nicht registiriert? <a href="registration.html">Hier Registrieren</a></p>
 	</div>
-	<div id="search">Suchen: <input type="text" size="20" name="bn"/> <button type="button" style="background-color:#000A3A; border: none;"><img style="height:20px; width: 20px; padding-top:100px;" src="img/search.ico" /></button></div>
+	<div id="search">Suchen: <input type="text" size="20" name="bn" placeholder="Suchen ... " title="Suchen ..." /> <button type="button" style="background-color:#000A3A; border: none;"><img style="height:20px; width: 20px; padding-top:100px;" src="img/search.ico" /></button></div>
 </div>
 
 <div id="control">
@@ -31,52 +31,56 @@
 
 <div id="content">
 	<h1>Registrieren</h1>
+	<form>
 	<table class="column1Right column1Bold">
 		<tr>
 			<td>Anrede</td>
-			<td><select name="anrede">
-					<option selected>Frau</option>
-					<option>Herr</option>
+			<td>
+				<select name="anrede" title="Anrede" required="required">
+					<option value="" selected="selected">Anrede</option>
+					<option value="female">Frau</option>
+					<option value="male">Herr</option>
 				</select>
 			</td>
 		</tr>
 		<tr>
 			<td>Vorname*</td>
-			<td><input type="text" size="20" name="vorname" /></td>
+			<td><input type="text" size="20" name="vorname" placeholder="Vorname" title="Vorname" required="required" /></td>
 		</tr>
 		<tr>
 			<td>Nachname*</td>
-			<td><input type="text" size="20" name="nachname" /></td>
+			<td><input type="text" size="20" name="nachname" placeholder="Nachname" title="Nachname" required="required" /></td>
 		</tr>
 		<tr>
 			<td>E-Mail*</td>
-			<td><input type="text" size="20" name="email" /></td>
+			<td><input type="text" size="20" name="email" placeholder="E-Mail" title="E-Mail" required="required" /></td>
 		</tr>
 		<tr>
 			<td>PLZ*</td>
-			<td><input type="text" size="20" name="plz" /></td>
+			<td><input type="text" size="20" name="plz" placeholder="PLZ" title="PLZ" required="required" /></td>
 		</tr>
 		<tr>
 			<td>Ort*</td>
-			<td><input type="text" size="20" name="ort" /></td>
+			<td><input type="text" size="20" name="ort" placeholder="Ort" title="Ort" required="required" /></td>
 		</tr>
 		<tr>
 			<td>Matrikelnummer*</td>
-			<td><input type="text" size="20" name="mnr" /></td>
+			<td><input type="text" size="20" name="mnr" placeholder="Matrikelnummer" title="Matrikelnummer" required="required" /></td>
 		</tr>
 		<tr>
 			<td>Universität*</td>
-			<td><input type="text" size="20" name="uni" /></td>
+			<td><input type="text" size="20" name="uni" placeholder="Universität" title="Universität" required="required" /></td>
 		</tr>
 		<tr>
 			<td>AGB</td>
-			<td><input type="checkbox" name="AGB" value="Bike"></td>
+			<td><input type="checkbox" name="AGB" value="Bike" title="AGB akzeptieren" required="required" /></td>
 		</tr>
 		<tr>
 			<td></td>
-			<td><button type="button">Registrieren</button></td>
+			<td><input type="submit" value="Registrieren" /></td>
 		</tr>
 	</table>
+	</form>
 </div>
 </body>
 </html>
