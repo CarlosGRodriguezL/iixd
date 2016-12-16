@@ -154,3 +154,11 @@ li.dropdown > div {
 .dropdown:hover .dropdown-content {
 	display: block;
 }
+
+.hide {
+	display: none;
+}
+
+.container-fluid {
+	padding: 0 !important;
+}
