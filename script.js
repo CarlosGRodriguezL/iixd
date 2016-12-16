@@ -15,7 +15,7 @@ $(document).ready(function(){
 			$("#Author").val ("");
 			$("#titel").val ("");
 			$("#Studienrichtung").val ("");
-			$("#Fächer").val ("");
+			$("#Faecher").val ("");
 		}
 	});
 	$("#titel").keyup(function(){
@@ -28,7 +28,7 @@ $(document).ready(function(){
 			$("#ISBN").val ("");
 			$("#Author").val ("");
 			$("#Studienrichtung").val ("");
-			$("#Fächer").val ("");
+			$("#Faecher").val ("");
 		}
 	});
 	
@@ -40,13 +40,13 @@ $(document).ready(function(){
 			$("#Author").val ("Hans Peter");
 			$("#titel").val ("Informatik Grundlagen ...");
 			$("#Studienrichtung").val ("Informatik");
-			$("#Fächer").val ("PK, OOP, IIXD,...");
+			$("#Faecher").val ("PK, OOP, IIXD,...");
 		}else{
 			$("#ISBN").val ("");
-			$("#Author").val ("Jörg Maier");
+			$("#Author").val ("JÃ¼rg Maier");
 			$("#titel").val ("Informatik Basics Script ...");
 			$("#Studienrichtung").val ("Informatik");
-			$("#Fächer").val ("PK, OOP, IIXD,...");
+			$("#Faecher").val ("PK, OOP, IIXD,...");
 		}
 		
 	});
