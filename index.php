@@ -33,9 +33,9 @@
 				<div class="col-md-3 col-md-offset-1">
 					<form class="form-inline">
 						<div class="form-group">
-							<input type="text" size="20" name="bn" placeholder="Suchen ... " title="Suchen ..." />
+							<input id="searchInput" type="text" size="20" name="bn" placeholder="Suchen ... " title="Suchen ..." />
 						</div>
-						<button type="button" class="btn">
+						<button type="button" class="btn" onclick="if (document.getElementById('searchInput').value.length > 0) { hideBooksByClassName('hideBook'); }">
 							<span class="glyphicon glyphicon-search"></span>
 						</button>
 					</form>
