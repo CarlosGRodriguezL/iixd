@@ -1,7 +1,7 @@
 <h2>Programmkonstruktionen</h2>
 <div class="flex">
 	<div>
-		<img class="cover" src="img/cover/scriptProgrammkonstruktionen.svg">
+		<img style="border: 1px solid black" class="cover" src="img/cover/scriptProgrammkonstruktionen.svg" />
 	</div>
 
 	<div>
@@ -22,12 +22,12 @@
 			</tbody>
 		</table>
 
-		<div style="margin-top: 40px" class="alert alert-success" role="alert">
-			<strong>Es wurde eine Anfrage versendet.</strong>
+		<div style="margin-top: 40px" id="success" class="alert alert-success hide" role="alert">
+			<strong>Es wurde eine E-Mail an den Verborger gesendet.</strong>
 		</div>
 	</div>
 
-	<div>
+	<div style="max-height: calc(100vh - 250px); overflow-y: scroll">
 		<table id="available" class="border">
 			<thead>
 			<tr>
@@ -47,10 +47,10 @@
 	// just generating data
 	conditions = ['neuwertig', 'gebraucht'];
 	availableTbody = document.getElementById('available').getElementsByTagName('tbody')[0];
-	for (var i = 0; i < 15; ++i) {
+	for (var i = 0; i < 25; ++i) {
 		var row = availableTbody.insertRow();
 		row.insertCell().innerText = '' + (1000 + Math.round(Math.random() * (9999 - 1000)));
 		row.insertCell().innerText = conditions[Math.round(Math.random() * (conditions.length - 1))];
-		row.insertCell().innerHTML = '<h4><span class="label label-info">ausborgen</span></h4>'
+		row.insertCell().innerHTML = "<h4><button onclick=\"$('#success').removeClass('hide');\" class=\"label label-info\">ausborgen</button></h4>";
 	}
 </script>
