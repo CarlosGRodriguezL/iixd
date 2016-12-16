@@ -94,6 +94,8 @@ table th, table td {
 
 #content {
 	color: #000A3A;
+	height: calc(100vh - 150px) !important;
+	overflow-y: scroll;
 }
 
 #content h1 {

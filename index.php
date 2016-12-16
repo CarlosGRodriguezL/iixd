@@ -11,7 +11,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-2">
-			<div id="logo"><img src="img/logo.jpg" /></div>
+			<a href="."><div id="logo"><img src="img/logo.jpg" /></div></a>
 		</div>
 		<div class="col-md-10" id="banner">
 			<div style="height: 110px"></div>
@@ -42,9 +42,8 @@
 		<div class="col-md-2">
 			<div id="control">
 				<ul>
-					<li><a href="anmelden.html">Home</a></li>
 					<li class="dropdown">
-						<a href="javascript:void(0)" class="dropbtn">Studien</a>
+						<a href="." class="dropbtn">Studien</a>
 						<div class="dropdown-content">
 							<a href="#">Architektur</a>
 							<a href="#">Elektrotechnik</a>
@@ -52,11 +51,12 @@
 							<a href="#">Maschinenbau</a>
 						</div>
 					</li>
-					<li><a href="#">Inserieren</a></li>
+					<li><a href=".?file=sellform">Inserieren</a></li>
 				</ul>
 			</div>
 		</div>
 		<div id="content" class="col-md-10">
+			<?php include_once((!isset($_GET['file']) ? 'books' : $_GET['file']) . '.html'); ?>
 		</div>
 	</div>
 </div>
