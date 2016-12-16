@@ -1,7 +1,11 @@
 /* general style */
+* {
+	padding: 0;
+	margin: 0;
+}
+
 body {
 	background-color: lightgray;
-	padding: 10px;
 	hyphens: auto;
 }
 
@@ -37,6 +41,59 @@ table th, table td {
 
 .column1Bold tr td:first-child {
 	font-weight: bold;
+}
+
+/* layout */
+#banner {
+	height: 150px;
+	background-color:#000A3A;
+	color:#FFFFFF;
+}
+
+#logo {
+	float: left;
+	width: 250px;
+	height:150px;
+}
+
+#logo img {
+	width:250px;
+	height:150px;
+}
+
+#login {
+	float: left;
+	height:auto;
+	margin-top: 100px;
+	padding-left: 5px;
+}
+
+#login a {
+	color:#FFFFFF;
+}
+
+#search {
+	float: right;
+	padding-right: 5px;
+}
+
+#control {
+	background-color: #BAC6FF;
+	width: 250px;
+	height: calc(100vh - 150px) !important;
+	float: left
+}
+
+#control strong,  #control a {
+	text-decoration: none;
+	border-top: 1px solid black;
+	display: block;
+	padding: 6px 6px 6px 20px;
+	color: #000A3A;
+}
+
+#control ul {
+	border-bottom: 1px solid black;
 }
 
 /* books.html */
