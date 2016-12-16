@@ -1,6 +1,6 @@
 <div id="content">
 	<h1>Registrieren</h1>
-	<form>
+	<form onsubmit="return false;">
 	<table class="column1Right column1Bold">
 		<tr>
 			<td>Anrede</td>
@@ -46,8 +46,11 @@
 		</tr>
 		<tr>
 			<td></td>
-			<td><input type="submit" value="Registrieren" /></td>
+			<td><input onclick="$('#success').removeClass('hide');" type="submit" value="Registrieren" /></td>
 		</tr>
 	</table>
 	</form>
+	<div class="alert alert-success hide" id="success">
+		Benutzer wurde erstellt.
+	</div>
 </div>

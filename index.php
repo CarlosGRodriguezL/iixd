@@ -27,7 +27,10 @@
 						<button type="submit" class="btn btn-default">Login</button>
 					</form>
 				</div>
-				<div class="col-md-3 col-md-offset-4">
+				<div class="col-md-3">
+						<span style="color: white">Noch nicht registiriert? <a href=".?file=registration">Hier Registrieren</a></span>
+				</div>
+				<div class="col-md-3 col-md-offset-1">
 					<form class="form-inline">
 						<div class="form-group">
 							<input type="text" size="20" name="bn" placeholder="Suchen ... " title="Suchen ..." />

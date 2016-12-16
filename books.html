@@ -1,4 +1,4 @@
-<div class="flex" id="bookList" style="">
+<div class="flex" id="bookList" style="padding: 15px;">
 <a class="book" href=".?file=book">
 	<h3 class="title">Datenbanksysteme - Eine Einführung</h3>
 	<img class="cover" src="img/cover/ISBN978-3-486-72139-3.jpeg" />
@@ -24,3 +24,14 @@
 	<img class="cover" src="img/cover/scriptProgrammkonstruktionen.svg">
 </a>
 </div>
+
+
+<script type="text/javascript">
+	function hideBooksByClassName(cssClassName) {
+		var books = document.getElementsByClassName(cssClassName);
+		for (var i = 0; i < books.length; ++i) {
+			if (books.item(i).style.display = books.item(i).style.display != 'none')
+				books.item(i).style.display = books.item(i).style.display = 'none';
+		}
+	}
+</script>

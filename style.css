@@ -93,7 +93,6 @@ table th, table td {
 }
 
 #content {
-	padding: 15px;
 	color: #000A3A;
 	height: calc(100vh - 150px) !important;
 	overflow-y: scroll;
@@ -101,7 +100,6 @@ table th, table td {
 
 #content h1 {
 	color: #000A3A;
-	padding-top: 10px;
 }
 
 /* books.html */
@@ -139,7 +137,6 @@ li.dropdown > div {
 }
 
 .dropdown-content {
-	display: none;
 	background-color: #f9f9f9;
 }
 
