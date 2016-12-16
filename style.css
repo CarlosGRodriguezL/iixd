@@ -93,6 +93,7 @@ table th, table td {
 }
 
 #content {
+	padding: 15px;
 	color: #000A3A;
 	height: calc(100vh - 150px) !important;
 	overflow-y: scroll;
@@ -106,7 +107,7 @@ table th, table td {
 /* books.html */
 .book {
 	width: 210px;
-	background-color: grey;
+	background-color: lightgrey;
 	padding: 5px;
 	border-radius: 5px;
 }

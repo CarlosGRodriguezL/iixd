@@ -45,10 +45,10 @@
 					<li class="dropdown">
 						<a href="." class="dropbtn">Studien</a>
 						<div class="dropdown-content">
-							<a href="#">Architektur</a>
-							<a href="#">Elektrotechnik</a>
-							<a href="registration.html">Informatik</a>
-							<a href="#">Maschinenbau</a>
+							<a href="#" onclick="hideBooksByClassName('hideBook'); ">Architektur</a>
+							<a href="#" onclick="hideBooksByClassName('hideBook'); ">Elektrotechnik</a>
+							<a href="#" onclick="hideBooksByClassName('hideBook'); ">Informatik</a>
+							<a href="#" onclick="hideBooksByClassName('hideBook'); ">Maschinenbau</a>
 						</div>
 					</li>
 					<li><a href=".?file=sellform">Inserieren</a></li>
